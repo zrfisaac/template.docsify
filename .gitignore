@@ -1,0 +1,16 @@
+# [ zrfisaac ]
+
+# [ sobre ]
+# - autor : Isaac Caires Santana
+# . - email : zrfisaac@gmail.com
+# . - site : zrfisaac.github.io
+# - base : zrfisaac.gitignore.base : 26.5.17.1
+
+# [ gitignore ]
+
+# : - base
+$*
+_*
+!*.github
+!*.gitignore
+!*_sidebar.md
