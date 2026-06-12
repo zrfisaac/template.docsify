@@ -14,3 +14,10 @@ _*
 !*.github
 !*.gitignore
 !*_sidebar.md
+
+# : - node / cordova
+node_modules/
+platforms/
+plugins/
+www/*
+!www/.gitkeep

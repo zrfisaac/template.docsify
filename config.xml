@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="zrfisaac.template.docsify" version="26.6.12.7" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" android-versionCode="26061207">
+	<name>ZR Docsify</name>
+	<description>Template Docsify</description>
+	<author email="zrfisaac@gmail.com" href="https://zrfisaac.github.io">Isaac Caires Santana</author>
+
+	<content src="index.html" />
+	<icon src="logo.png" />
+
+	<preference name="Fullscreen" value="false" />
+	<preference name="Orientation" value="default" />
+	<preference name="android-minSdkVersion" value="24" />
+	<preference name="android-targetSdkVersion" value="36" />
+
+	<access origin="*" />
+	<allow-navigation href="*" />
+	<allow-intent href="http://*/*" />
+	<allow-intent href="https://*/*" />
+	<allow-intent href="mailto:*" />
+	<allow-intent href="tel:*" />
+
+	<platform name="android">
+		<preference name="AndroidXEnabled" value="true" />
+	</platform>
+
+	<hook type="before_prepare" src="scripts/sync-cordova-www.js" />
+</widget>

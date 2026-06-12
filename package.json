@@ -1,0 +1,31 @@
+{
+  "name": "zrfisaac-template-docsify",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Template Docsify.",
+  "scripts": {
+    "vendor": "node scripts/vendor-deps.js",
+    "cordova:config": "node scripts/update-cordova-config.js",
+    "cordova:fix-android": "node scripts/fix-cordova-android-package.js",
+    "cordova:sync": "node scripts/sync-cordova-www.js",
+    "cordova:prepare": "npm run vendor && npm run cordova:config && npm run cordova:sync && cordova prepare",
+    "cordova:build:android": "npm run vendor && npm run cordova:config && npm run cordova:sync && npm run cordova:fix-android && cordova prepare android && npm run cordova:fix-android && cordova compile android"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "cordova": "^12.0.0",
+    "cordova-android": "^15.0.0",
+    "docsify": "^4.13.1",
+    "docsify-copy-code": "^2.1.1",
+    "docsify-latex": "^0.5.2",
+    "docsify-mermaid": "^2.0.1",
+    "katex": "^0.17.0",
+    "mermaid": "^10.9.6",
+    "prismjs": "^1.30.0"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  }
+}
